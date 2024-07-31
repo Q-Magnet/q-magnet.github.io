@@ -5,29 +5,21 @@
 		<style type="text/css">
 			* {
 				font-size: 18px;
-				font-family: "Times New Roman", "SimSun", "宋体", "Microsoft Yahei", "微软雅黑", "Microsoft YaHei UI";
+				font-family: "Harmony OS Sans SC", "Microsoft Yahei", "微软雅黑", "Microsoft YaHei UI";
 				font-weight: 400;
-			}
-			img {
-				width: 32px;
-				height: 32px;
-				vertical-align: middle;
 			}
 			a {
 				text-decoration: none;
 				color: #0080ff;
 			}
 			h1 {
-				font-size: 32px;
-				font-weight: 500;
+				font-size: 24px;
 			}
 			h2 {
-				font-size: 32px;
-				font-weight: 500;
+				font-size: 18px;
 			}
 			h3 {
-				font-size: 24px;
-				font-weight: ;
+				font-size: 14px;
 			}
 			body {
 				margin: 64px;
@@ -55,7 +47,7 @@
 				margin-left: 64px;
 			}
 			.title {
-				position: fixed;
+				position: relative;
 				margin: 0;
 				top: 21px;
 				left: 48px;
@@ -66,7 +58,9 @@
 				position: relative;
 				font-color: #808080;
 				font-size: 24px;
-				margin-left: 440px;
+				vertical-align: middle;
+				top: 21px;
+				left: 90%;
 			}
 			.title-link {
 				position: relative;
@@ -81,17 +75,67 @@
 			.content a {
 				margin-left: 5%
 			}
+			.block {
+				width: 80%;
+				background-color: #f8f8ff;
+				border: 1px solid;
+				border-color: #aaaaaa;
+				border-radius: 30px;
+				margin: 4%;
+			}
+			.block * {
+				margin: 32px;
+				margin-left: 48px;
+				margin-top: 20px;
+				vertical-align: middle;
+				text-align: center;
+			}
+			.get {
+				position: relative;
+				margin: auto;
+				background-color: #00aaff;
+				color: #ffffff;
+				border: none;
+				border-radius: 50px;
+				width: 100px;
+				height: 50px;
+				left: 45%;
+				margin-bottom: 50px;
+			}
+			.get-disabled {
+				position: relative;
+				margin: auto;
+				background-color: #aaaabb;
+				color: #ffffff;
+				border: none;
+				border-radius: 50px;
+				width: 100px;
+				height: 50px;
+				left: 45%;
+				margin-bottom: 50px;
+			}
 		</style>
 	</head>
 	<body>
 		<!-- 标题栏 -->
 		<div class="titlebar">
-			<img class="titleicon" src="assets/qemu-icon.svg">
 			<h1 class="title">sodiumOS，在Scratch上实现完美的真系统级体验</h1>
 			<a href="https://qemu.weilnetz.de/" class="title-link-a">下载</a>
 		</div>
 		<div class="block">
-			<h1>sodiumOS Development Preview
+			<h1>sodiumOS Development Preview</h1>
+			<p>实时更新，最新功能</p>
+			<button class="get" type="button" onclick="window.open('q-magnet.github.io/sodium/download.html')">打开</a>
+		</div>
+		<div class="block">
+			<h1>sodiumOS Development Preview Online</h1>
+			<p>一键启动，无需下载</p>
+			<button class="get" type="button" onclick="window.open('q-magnet.github.io/sodium/online.html')">打开</a>
+		</div>
+		<div class="block">
+			<h1>sodiumOS Stable</h1>
+			<p>更加稳定，更加实用</p>
+			<button class="get-disabled" type="button">敬请期待</a>
 		</div>
 	</body>
 </html>
